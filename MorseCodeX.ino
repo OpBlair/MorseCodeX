@@ -28,6 +28,7 @@ struct MorseEntry {
   char letter;
   const char* code;
 };
+
 MorseEntry morseTable[] = {
   {'A', ".-"}, {'B', "-..."}, {'C', "-.-."}, {'D', "-.."}, {'E', "."},
   {'F', "..-."}, {'G', "--."}, {'H', "...."}, {'I', ".."}, {'J', ".---"},
@@ -269,4 +270,5 @@ char decodeMorse(String code) {
     if (code.equals(morseTable[i].code)) return morseTable[i].letter;
   }
   return '?';
+
 }
